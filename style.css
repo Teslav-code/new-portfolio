@@ -6,12 +6,17 @@ html {
 }
 
 h1 {
-  font-family: "Roboco", sans-serif;
+  font-family: 'Roboco', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 79px;
-  color: #000000;
+  font-size: 36px;
+  line-height: 100%;
+  margin-left: auto; 
+  margin-right: auto;
+  min-width: auto;
+  min-height: auto;
+  width: 100%;
+  /* text-align: center; */
 }
 
 @media (max-width: 1279px) {
@@ -21,8 +26,8 @@ h1 {
     font-weight: 600;
     font-size: 36px;
     line-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 109%;
+    text-align: center;
   }
 }
 
@@ -619,17 +624,12 @@ h1 {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 5%;
+  padding-top: 100px;
 }
 
 @media (max-width: 1279px) {
   .section__processes-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 97%;
-    padding-top: 15%;
+    padding-top: 97px;
   }
 }
 
@@ -649,6 +649,7 @@ h1 {
   line-height: 26px;
   text-align: center;
   width: 30%;
+  margin-bottom: 57px;
 }
 
 
@@ -720,7 +721,7 @@ h1 {
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    width: 80%;
+    width: 102%;
   }
 
   .section__processes {
@@ -839,79 +840,73 @@ h1 {
 
 /*---------------------------------------------------- contacts --------------------------------------------------------*/
 
-.section_contacts {
+.section__contacts {
   background-color: #eeeff1;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
 }
 
-.section_contacts-title {
+
+.section__contacts-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+@media (max-width: 1279px) {
+  .section__contacts-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 89%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+
+.section__contacts-title {
   font-family: "Roboco", sans-serif, bold;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 @media (max-width: 1279px) {
-  .section_contacts-title {
-    font-family: "Roboco", sans-serif, bold;
-    font-style: normal;
-    font-weight: 600;
-    font-size: px;
-    line-height: 38px;
+  .section__contacts-title {
     padding-left: 0;
-    font-size: 25px;
+    font-size: 32px;
     padding-top: 55px;
   }
 
 }
 
-.section_contacts-lorem {
+.section__contacts-lorem {
   font-family: "Roboco", sans-serif;
   font-weight: 400;
   color: #727272;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
+  width: 115%;
 }
 
 @media (max-width: 1279px) {
-  .section_contacts-lorem {
-    font-family: "Roboco", sans-serif;
-    font-weight: 400;
-    color: #727272;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
+  .section__contacts-lorem {
     margin-bottom: 48px;
+    width: 115%;
   }
 }
 
-.section_contacts_form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  /* align-items: center;
-  text-align: center; */
-  width: 100%;
-}
-
-@media (max-width: 1279px) {
-  .section_contacts_form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-  }
-}
-
-.section_contacts-input {
+.section__contacts-input {
   display: flex;
   max-width: 800px;
   margin-left: auto;
@@ -924,15 +919,13 @@ h1 {
 }
 
 @media (max-width: 1279px) {
-  .section_contacts-input {
-    display: flex;
-    flex-wrap: wrap;
+  .section__contacts-input {
     justify-content: center;
     padding-bottom: 25%;
   }
 }
 
-.section_contacts-main-div {
+.section__contacts-main-div {
   max-width: 450px;
   height: 445px;
   margin-left: auto;
@@ -973,20 +966,9 @@ textarea {
 
 @media (max-width: 1279px) {
   textarea {
-    resize: none;
-    background: white;
-    border: 1px solid white;
     width: 250px;
     height: 175px;
-    font-family: "Roboco";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    margin-top: 20px;
-
-    color: #5f5d5d;
-  }
+}
 }
 
 .message-tel {
@@ -1051,26 +1033,13 @@ textarea {
 
 @media (max-width: 1279px) {
   .name {
-    padding-left: 20px;
-    font-family: "Roboco", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
     height: 50px;
-    color: #5f5d5d;
   }
 
   .message-email {
     padding-left: 20px;
     margin-top: 40px;
     height: 50px;
-    font-family: "Roboco", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    color: #5f5d5d;
   }
 
   .name,
@@ -1116,27 +1085,7 @@ textarea {
   color: #5f5d5d;
 }
 
-.section_contacts-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 30%;
-  margin: 0 auto;
-  padding-top: 5%;
-}
 
-@media (max-width: 1279px) {
-  .section_contacts-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 0;
-  }
-}
 
 /*------------------------------------------------------- foter -----------------------------------------------*/
 
@@ -1147,28 +1096,22 @@ textarea {
   padding: 50px 0px 50px 0px
 }
 
-.footer_div {
+.footer__data {
   display: flex;
   flex-direction: row;
   height: 100%;
 }
 
 @media (max-width: 1279px) {
-  .footer_div {
-    display: flex;
+.footer__data {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px 0px;
   }
-
-  .foter_wrapper {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
-.foter_wrapper {
+.foter__wrapper {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1176,14 +1119,14 @@ textarea {
 }
 
 @media (max-width: 1279px) {
-  .foter_wrapper {
+  .foter__wrapper {
     width: 100%;
     margin-top: 35px;
     margin-bottom: 0px;
   }
 }
 
-.footer_text {
+.footer-text {
   font-family: "Roboco", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1215,7 +1158,7 @@ textarea {
 }
 
 @media (max-width: 1279px) {
-  .foter_vk {
+  .foter__vk {
     width: 100%;
     margin-top: 40px;
   }
@@ -1227,7 +1170,7 @@ textarea {
 }
 
 @media (max-width: 1279px) {
-  .foter_vk-logo {
+  .foter__vk-logo {
     margin-right: 22px;
     justify-content: center;
   }
