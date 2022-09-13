@@ -5,6 +5,11 @@ html {
 
 }
 
+body {
+  width: auto;
+}
+
+
 h1 {
   font-family: 'Roboco', sans-serif;
   font-style: normal;
@@ -16,12 +21,10 @@ h1 {
   min-width: auto;
   min-height: auto;
   width: 100%;
-  /* text-align: center; */
 }
 
 @media (max-width: 1279px) {
   h1 {
-    width: 109%;
     text-align: center;
   }
 }
@@ -55,12 +58,6 @@ h1 {
     height: 178px;
     padding-top: 0;
   }
-}
-
-.section__design-design-layout-button {
-  align-items: center;
-  text-align: center;
-  width: 80% !important;
 }
 
 
@@ -155,6 +152,7 @@ h1 {
   color: #000000;
 }
 
+
 @media (max-width: 1279px) {
   .header {
     background-color: #eeeff1;
@@ -185,6 +183,7 @@ h1 {
 
 }
 
+
 /*-------------------------------------------------- design -------------------------------------------------*/
 
 .section__design {
@@ -195,7 +194,7 @@ h1 {
 .section__design-design-layout-button {
   display: flex;
   flex-flow: column wrap;
-  width: 40%;
+  /* width: 40%; */
   max-width: 510px;
   justify-content: start;
   align-items: start;
@@ -241,6 +240,7 @@ h1 {
   .section__design-design-layout-button {
     max-width: 322px;
     justify-content: center;
+    text-align: center;
   }
 
   .section_design-text {
@@ -270,7 +270,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 93%;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -290,7 +290,7 @@ h1 {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  width: 37%;
+  width: 32%;
   margin-top: 50px;
 }
 
@@ -405,7 +405,7 @@ h1 {
   margin-top: 20px;
 }
 
-.section-title-stripe {
+.section__skills-title-stripe {
   height: 4px;
   width: 120%;
   background: -webkit-linear-gradient(left, #34547a 80%, #c4c4c4 20%);
@@ -434,12 +434,12 @@ h1 {
   margin-left: 15%;
 }
 
-.section__skills-two {
+.section__skills-photo {
   object-fit: cover;
   margin-right: 10%;
 }
 
-.section__skills-two-image {
+.section__skills-photo-designer {
   width: 100%;
   height: 92%;
 }
@@ -465,42 +465,34 @@ h1 {
     margin-top: 98px;
   }
 
-  .section__skills-two {
+  .section__skills-photo {
     margin-right: auto;
   }
 
-  .section__skills-two-image {
+  .section__skills-photo-designer {
     width: 80%;
     height: 92%;
   }
 
-  @media (max-width: 1279px) {
-    .section__skills-my-skills-photoshop {
-      width: 50%;
-      padding-left: 7%;
-      padding-right: 0%;
-      padding-bottom: 2%;
-    }
+  .section__skills-my-skills-photoshop {
+    width: 50%;
+    padding-left: 7%;
+    padding-right: 0%;
+    padding-bottom: 2%;
   }
 
-  @media (max-width: 1279px) {
-    .section__skills-wrapper {
-      width: 55%;
-      margin-top: 5%;
-    }
+  .section__skills-wrapper {
+    width: 55%;
+    margin-top: 5%;
   }
 
-  @media (max-width: 1279px) {
-    .section-title-stripe {
-      width: 150%;
-    }
-  }
-  @media (max-width: 1279px) {
-    .section__skills-adobe{
-      margin-left: 0;
-    }
+  .section__skills-title-stripe {
+    width: 150%;
   }
 
+  .section__skills-adobe {
+    margin-left: 0;
+  }
 }
 
 
@@ -631,7 +623,7 @@ h1 {
 .section__processes__image-absolute-element:hover {
   position: absolute;
   cursor: pointer;
-  background: url(image/eye.png) #34547acc;
+  background: url(image/processes/eye.png) #34547acc;
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
@@ -701,7 +693,6 @@ h1 {
   font-size: 32px;
   line-height: 38px;
   text-align: left;
-  padding-left: 15px;
 }
 
 
@@ -712,7 +703,6 @@ h1 {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  width: 115%;
   margin-top: 50px;
 }
 
@@ -910,9 +900,7 @@ textarea {
     width: 250px;
     height: 175px;
   }
-
 }
-
 
 /*------------------------------------------------------- foter -----------------------------------------------*/
 
